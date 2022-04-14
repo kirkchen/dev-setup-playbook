@@ -1,0 +1,19 @@
+---
+homebrew_installed_packages:
+  # - ansible # Installed via Pip.
+  - zsh
+  - tig
+  - pick
+  - fzf
+  - exa
+  - bat
+
+homebrew_taps:
+  - homebrew/core
+  - homebrew/cask
+
+homebrew_cask_appdir: /Applications
+homebrew_cask_apps:
+  - font-sauce-code-pro-nerd-font
+  - meld
+  - hammerspoon  
