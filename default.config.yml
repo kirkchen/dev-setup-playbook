@@ -4,12 +4,14 @@ configure_dotfiles: true
 # Homebrew
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - git
   - zsh
   - tig
   - pick
   - fzf
   - exa
   - bat
+  - diff-so-fancy
 
 homebrew_taps:
   - homebrew/core
