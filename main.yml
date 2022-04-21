@@ -21,3 +21,6 @@
     - role: geerlingguy.dotfiles
       when: configure_dotfiles
       tags: ['dotfiles']
+    - role: terminal-setup
+      when: configure_dotfiles
+      tags: ['dotfiles']
