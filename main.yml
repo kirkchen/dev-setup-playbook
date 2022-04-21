@@ -24,3 +24,7 @@
     - role: terminal-setup
       when: configure_dotfiles
       tags: ['dotfiles']
+    - role: mac-setup
+      when: configure_mac
+      tags: ['mac']
+    

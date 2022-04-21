@@ -1,5 +1,6 @@
 ---
 configure_dotfiles: true
+configure_mac: true
 
 # Homebrew
 homebrew_installed_packages:

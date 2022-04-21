@@ -1,0 +1,141 @@
+---
+# Save panel settings
+- name: Expand save panel by default (1).
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSNavPanelExpandedStateForSaveMode
+    type: bool
+    value: true
+    state: present
+
+- name: Expand save panel by default (2).
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSNavPanelExpandedStateForSaveMode2
+    type: bool
+    value: true
+    state: present
+
+# Prevent automatic correction
+- name: Disable auto capitalization.
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticCapitalizationEnabled
+    type: bool
+    value: false
+    state: present
+
+- name: Disable smart dashes.
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticDashSubstitutionEnabled
+    type: bool
+    value: false
+    state: present
+
+- name: Disable automatic period substitution.
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticPeriodSubstitutionEnabled
+    type: bool
+    value: false
+    state: present
+
+- name: Disable smart quotes.
+  osx_defaults:
+    domain: NSGlobalDomain
+    key: NSAutomaticQuoteSubstitutionEnabled
+    type: bool
+    value: false
+    state: present
+
+# Dock settings
+- name: Automatic hide and show the Dock
+  osx_defaults:
+    domain: com.apple.dock
+    key: autohide
+    type: bool
+    value: true
+    state: present
+
+- name: Disable recent applications in Dock
+  osx_defaults:
+    domain: com.apple.dock
+    key: show-recents
+    type: bool
+    value: false
+    state: present
+
+# Finders
+- name: Show the Path bar in Finder
+  osx_defaults:
+    domain: com.apple.finder
+    key: 'ShowPathbar'
+    type: bool
+    value: true
+    state: present
+
+- name: Show the Status bar in Finder
+  osx_defaults:
+    domain: com.apple.finder
+    key: 'ShowStatusBar'
+    type: bool
+    value: true
+    state: present
+
+- name: Show Hidden files in Finder
+  osx_defaults:
+    domain: com.apple.finder
+    key: 'AppleShowAllFiles'
+    type: bool
+    value: true
+    state: present
+
+- name: Always search within current directory
+  osx_defaults:
+    domain: com.apple.finder
+    key: 'FXDefaultSearchScope'
+    type: string
+    value: SCcf
+    state: present
+
+- name: Show all filename extensions in Finder
+  osx_defaults:
+    domain: com.apple.finder
+    key: 'AppleShowAllExtensions'
+    type: bool
+    value: true
+    state: present
+
+- name: Disable warning when changing file extension
+  osx_defaults:
+    domain: com.apple.finder
+    key: 'FXEnableExtensionChangeWarning'
+    type: bool
+    value: false
+    state: present
+
+- name: Disable .DS_Store file creation on network volumes
+  osx_defaults:
+    domain: com.apple.desktopservices
+    key: 'DSDontWriteNetworkStores'
+    type: bool
+    value: true
+    state: present
+
+# Trackpad settings
+- name: Enable tap to click
+  osx_defaults:
+    domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
+    key: 'Clicking'
+    type: int
+    value: 1
+    state: present
+
+- name: Enable three finger drag
+  osx_defaults:
+    domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
+    key: 'TrackpadThreeFingerDrag'
+    type: int
+    value: 1
+    state: present
