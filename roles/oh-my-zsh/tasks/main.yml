@@ -1,4 +1,5 @@
 ---
+# Install oh-my-zsh
 - name: Check if .oh-my-zsh exists
   stat:
     path: ~/.oh-my-zsh
@@ -8,4 +9,11 @@
   git:
     repo=https://github.com/robbyrussell/oh-my-zsh
     dest=~/.oh-my-zsh
+  when: not stat_oh_my_zsh_result.stat.exists
+
+# Install oh-my-zsh theme
+- name: Cloning oh-my-zsh theme
+  git:
+    repo=https://github.com/caiogondim/bullet-train.zsh
+    dest=~/.oh-my-zsh/custom/themes/bullet-train.zsh
   when: not stat_oh_my_zsh_result.stat.exists
