@@ -1,0 +1,13 @@
+---
+- name: Install hammerspoon
+  homebrew_cask:
+    name: hammerspoon
+    state: present
+
+- name: Cloning hammerspoon config
+  git:
+    repo: "{{ hammerspoon_repo }}"
+    dest: "~/.hammerspoon"
+    version: "master"
+    accept_hostkey: "true"
+  become: false

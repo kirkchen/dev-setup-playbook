@@ -1,6 +1,7 @@
 ---
 configure_dotfiles: true
 configure_mac: true
+configure_hammerspoon: true
 
 # Homebrew
 homebrew_installed_packages:
@@ -22,7 +23,6 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - font-sauce-code-pro-nerd-font
   - meld
-  - hammerspoon  
 
 # Dotfiles
 dotfiles_repo: git@github.com:kirkchen/vimrc.git
@@ -33,3 +33,6 @@ dotfiles_files:
   - .vimrc
   - .tigrc
   - .gitconfig
+
+# HammerSpoon
+hammerspoon_repo: git@github.com:kirkchen/.hammerspoon.git
