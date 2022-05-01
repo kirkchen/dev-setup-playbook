@@ -23,6 +23,7 @@ homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
   - font-sauce-code-pro-nerd-font
   - meld
+  - grammarly
 
 # Dotfiles
 dotfiles_repo: git@github.com:kirkchen/vimrc.git
