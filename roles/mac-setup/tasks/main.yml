@@ -126,7 +126,7 @@
 # Trackpad settings
 - name: Enable tap to click
   osx_defaults:
-    domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
+    domain: com.apple.AppleMultitouchTrackpad
     key: 'Clicking'
     type: int
     value: 1
@@ -134,7 +134,7 @@
 
 - name: Enable three finger drag
   osx_defaults:
-    domain: com.apple.driver.AppleBluetoothMultitouch.trackpad
+    domain: com.apple.AppleMultitouchTrackpad
     key: 'TrackpadThreeFingerDrag'
     type: int
     value: 1
