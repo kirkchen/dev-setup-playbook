@@ -27,7 +27,6 @@
     - role: mac-setup
       when: configure_mac
       tags: ['mac']
-    - role:  hammerspoon
+    - role: hammerspoon
       when: configure_hammerspoon
       tags: ['hammerspoon']
-    

@@ -17,7 +17,6 @@
     repo=https://github.com/caiogondim/bullet-train.zsh
     dest=~/.oh-my-zsh/custom/themes/bullet-train.zsh
   when: not stat_oh_my_zsh_result.stat.exists
-  
 
 # Repo https://github.com/zsh-users/zsh-autosuggestions
 - name: Cloning zsh autosuggestions plugin
