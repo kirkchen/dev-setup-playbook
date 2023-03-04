@@ -13,7 +13,7 @@
 
   roles:
     - role: elliotweiser.osx-command-line-tools
-    - role: geerlingguy.mac.homebrew
+    - role: geerlingguy.homebrew
       tags: ['homebrew']
     - role: oh-my-zsh
       when: configure_dotfiles
