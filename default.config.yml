@@ -32,7 +32,7 @@ homebrew_cask_apps:
   - alfred
 
 # Dotfiles
-dotfiles_repo: git@github.com:kirkchen/vimrc.git
+dotfiles_repo: git@github.com:kirkchen/dotfiles.git
 dotfiles_repo_accept_hostkey: true
 dotfiles_repo_local_destination: ~/.vim
 dotfiles_files:

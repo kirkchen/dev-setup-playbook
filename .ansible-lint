@@ -7,3 +7,8 @@ skip_list:
   - name[missing]
   - no-changed-when
   - risky-file-permissions
+  - latest[git]
+exclude_paths:
+  - roles/elliotweiser.osx-command-line-tools
+  - roles/geerlingguy.dotfiles
+  - roles/geerlingguy.homebrew

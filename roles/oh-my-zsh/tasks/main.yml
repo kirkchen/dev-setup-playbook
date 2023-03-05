@@ -7,27 +7,27 @@
 
 - name: Cloning oh-my-zsh
   git:
-    repo=https://github.com/robbyrussell/oh-my-zsh
-    dest=~/.oh-my-zsh
+    repo: https://github.com/robbyrussell/oh-my-zsh
+    dest: ~/.oh-my-zsh
   when: not stat_oh_my_zsh_result.stat.exists
 
 # Install oh-my-zsh theme
 - name: Cloning oh-my-zsh theme
   git:
-    repo=https://github.com/caiogondim/bullet-train.zsh
-    dest=~/.oh-my-zsh/custom/themes/bullet-train.zsh
+    repo: https://github.com/caiogondim/bullet-train.zsh
+    dest: ~/.oh-my-zsh/custom/themes/bullet-train.zsh
   when: not stat_oh_my_zsh_result.stat.exists
 
 # Repo https://github.com/zsh-users/zsh-autosuggestions
 - name: Cloning zsh autosuggestions plugin
   git:
-    repo=https://github.com/zsh-users/zsh-autosuggestions
-    dest=~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+    repo: https://github.com/zsh-users/zsh-autosuggestions
+    dest: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
   when: not stat_oh_my_zsh_result.stat.exists
 
 # Repo https://github.com/djui/alias-tips
 - name: Cloning zsh alias tips plugin
   git:
-    repo=https://github.com/djui/alias-tips
-    dest=~/.oh-my-zsh/custom/plugins/alias-tips
+    repo: https://github.com/djui/alias-tips
+    dest: ~/.oh-my-zsh/custom/plugins/alias-tips
   when: not stat_oh_my_zsh_result.stat.exists

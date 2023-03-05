@@ -5,8 +5,8 @@
     dest: "{{ dotfiles_repo_local_destination }}"
     version: "{{ dotfiles_repo_version }}"
     accept_hostkey: "{{ dotfiles_repo_accept_hostkey }}"
-    recursive: yes
-    update: yes
+    recursive: true
+    update: true
   become: false
 
 - name: Install vim plugins.
