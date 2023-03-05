@@ -26,9 +26,7 @@ homebrew_cask_apps:
   - meld
   - grammarly
   - visual-studio-code
-  - google-drive
   - iterm2
-  - moom
   - alfred
 
 # Dotfiles
