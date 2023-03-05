@@ -10,5 +10,5 @@
   become: false
 
 - name: Install vim plugins.
-  command: "vim +PlugInstall +qall"
+  command: "vim +PluginInstall +qall"
   become: false
