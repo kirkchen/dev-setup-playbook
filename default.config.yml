@@ -28,6 +28,9 @@ homebrew_cask_apps:
   - visual-studio-code
   - iterm2
   - alfred
+  - hammerspoon
+  - jetbrains-toolbox
+  - spotify
 
 # Dotfiles
 dotfiles_repo: https://github.com/kirkchen/dotfiles.git
