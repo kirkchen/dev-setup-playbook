@@ -35,7 +35,7 @@ homebrew_cask_apps:
 # Dotfiles
 dotfiles_repo: https://github.com/kirkchen/dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/.vim
+dotfiles_repo_local_destination: ~/.dotfiles
 dotfiles_files:
   - .zshrc
   - .vimrc
