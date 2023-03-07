@@ -26,15 +26,16 @@ homebrew_cask_apps:
   - meld
   - grammarly
   - visual-studio-code
-  - google-drive
   - iterm2
-  - moom
   - alfred
+  - hammerspoon
+  - jetbrains-toolbox
+  - spotify
 
 # Dotfiles
-dotfiles_repo: git@github.com:kirkchen/vimrc.git
+dotfiles_repo: https://github.com/kirkchen/dotfiles.git
 dotfiles_repo_accept_hostkey: true
-dotfiles_repo_local_destination: ~/.vim
+dotfiles_repo_local_destination: ~/.dotfiles
 dotfiles_files:
   - .zshrc
   - .vimrc
@@ -42,4 +43,4 @@ dotfiles_files:
   - .gitconfig
 
 # HammerSpoon
-hammerspoon_repo: git@github.com:kirkchen/.hammerspoon.git
+hammerspoon_repo: https://github.com/kirkchen/.hammerspoon.git

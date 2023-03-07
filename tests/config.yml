@@ -1,0 +1,13 @@
+---
+homebrew_installed_packages:
+  - git
+  - zsh
+  - tig
+  - pick
+  - fzf
+  - exa
+  - bat
+  - diff-so-fancy
+
+homebrew_cask_apps:
+  - meld

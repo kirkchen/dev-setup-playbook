@@ -1,5 +1,6 @@
 ---
-- hosts: all
+- name: Setup Mac for development
+  hosts: all
 
   vars_files:
     - default.config.yml
@@ -21,13 +22,9 @@
     - role: geerlingguy.dotfiles
       when: configure_dotfiles
       tags: ['dotfiles']
-    - role: terminal-setup
-      when: configure_dotfiles
-      tags: ['dotfiles']
     - role: mac-setup
       when: configure_mac
       tags: ['mac']
-    - role:  hammerspoon
+    - role: hammerspoon
       when: configure_hammerspoon
       tags: ['hammerspoon']
-    
